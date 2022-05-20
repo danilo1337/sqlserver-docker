@@ -2,9 +2,6 @@ version: '3.3'
 services:
    db:
      image: mcr.microsoft.com/mssql/server:latest
-     volumes:
-       - /opt/test:/var/lib/mysql
-       - ./mysql-dump:/docker-entrypoint-initdb.d
      environment:
        ACCEPT_EULA: Y
        SA_PASSWORD: Asdf@123
